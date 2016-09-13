@@ -14,13 +14,6 @@ end
 stableserverscripturl = "http://gs2012.xyz/3ds/PumaUpdater/index-server.lua"
 nightlyserverscripturl = "http://gs2012.xyz/3ds/PumaUpdater/index-nightly.lua"
 
---Set server CIA type (BGM/NOBGM)
-if System.doesFileExist("romfs:/bgm.wav") then
-	CIAupdatetype = "BGM"
-else
-	CIAupdatetype = "NOBGM"
-end
-
 -- Create directories
 System.createDirectory("/PumaUpdater")
 System.createDirectory("/PumaUpdater/settings")
