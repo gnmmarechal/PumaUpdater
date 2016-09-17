@@ -105,3 +105,11 @@ function readConfig(fileName)
         return
     end
 end
+
+function unicodify(str)
+    local new_str = ""
+    for i = 1, #str,1 do
+        new_str = new_str..string.sub(str,i,i)..string.char(00)
+    end
+    return new_str
+end
